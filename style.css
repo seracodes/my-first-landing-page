@@ -1,33 +1,81 @@
+/* RESET */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f9f9fb;
+  color: #111;
 }
 
 /* HERO */
 .hero {
-  background: #111;
-  color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  background: linear-gradient(to bottom, #111, #222);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .hero button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 16px;
   background: #ff5a5f;
   border: none;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #e0484d;
 }
 
 /* FEATURES */
 .features {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  gap: 40px;
+  padding: 80px 20px;
 }
 
 .feature {
-  max-width: 200px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 220px;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* SIGNUP */
+.signup {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.signup input {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.signup button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
