@@ -10,7 +10,13 @@ button.addEventListener("click", () => {
 const form = document.getElementById("signup-form");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // stops page reload
+  event.preventDefault();
 
-  alert("Form submitted successfully!");
+  const emailInput = form.querySelector("input");
+  const emailValue = emailInput.value;
+
+  // Store in browser
+  localStorage.setItem("userEmail", emailValue);
+
+  console.log("Saved:", emailValue);
 });
