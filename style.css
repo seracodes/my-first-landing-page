@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff5a5f;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+}
